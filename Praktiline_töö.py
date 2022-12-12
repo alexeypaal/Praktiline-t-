@@ -1,3 +1,62 @@
+  
+    #Days 
+from math import *
+from random import * 
+try:
+     päev=int(input("Mis päev täna on?"))
+except:
+     print("!!!!!!!")
+if   päev==1:
+    n="Esmaspäev"
+elif päev==2:
+    n="Teisipäev"
+elif päev==3:
+    n="Kolmapäev"
+elif päev==4:
+    n="Neljapäev"
+elif päev==5:
+    print="Reede"
+elif päev==6:
+    n="Laupäev"
+elif päev==7:
+    n="Pühapäev"
+else: 
+    n="vale number"
+print(n)
+print("Viga")
+    
+
+
+
+#12/12/22
+from math import *
+from random import * 
+try:
+    hinne=int(input("Mis hinne täna said koolis"))
+except:
+    print("!!!!!!")
+if hinne==5:
+    print("Väga hea!")
+elif hinne==4:
+    print("Hea!")
+elif hinne==3:
+    print("Rahuldav!")
+elif hinne==2 or hinne==1: #and , or, not !=ei võrdu, <, >, >=, <=
+    print("Lastekodu!")
+else: 
+    print("Viga!")
+
+    
+  
+
+
+
+
+
+
+
+
+
 #10
 from math import * 
 print("Ajateisendus")
@@ -70,15 +129,34 @@ print( " ^^ "" ^^ " )
 
 
 #4
-from math import * 
-print("aritmeetilise keskmise ")
-A1=int(input ("Sisesta 1. arv => "))
-A2=int(input ("Sisesta 2. arv => "))
-A3=int(input ("Sisesta 3. arv => "))
-A4=int(input ("Sisesta 4. arv => "))
-A5=int(input ("Sisesta 5. arv => "))
-K=(A1+A2+A3+A4+A5 )/ 5 
-print(f"keskmine on {keskmine}")
+
+try:
+   a=int(input("Number:"))
+except:
+    print("Vale andmetüüp!")
+    a=0
+try:
+    b=int(input("Number:"))
+except:
+    print("Vale andmetüüp!")
+    b=0
+try:
+    c=int(input("Number:"))
+except:
+        print("Vale andmetüüp!")
+        c=0
+try:
+    d=int(input("Number:"))
+except:
+    print("Vale andmetüüp!")
+    d=0
+try:
+    e=int(input("Number:"))
+except:
+    print("Vale andmetüüp!")
+    e=0
+p=(a+b+c+d+e)/5
+print(f"Vastus:keskmise suvalisest on {p}")
 
 
 
@@ -99,8 +177,10 @@ d=sqrt(N**2+M**2)
 print ("Maatüki diagonaal on {d} m**2")
 
 
-#1from math import * 
+#1 
 print("Puu läbimõõdu arvutamine")
-C=float(input("Puu ümbermõõt: "))
+try:
+    C=float(input("Puu ümbermõõt: "))
+except:print("Vale andmetüüp")
 d=2*(C/(2*pi))
 print(f"Vaastus:\nPuu läbimõõduga {C} ümbermõõt võrdub {d }")
