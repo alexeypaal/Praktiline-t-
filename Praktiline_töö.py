@@ -1,51 +1,68 @@
 from math import *
 from random import *
-#13/12/22
-try:
-    vanus=int(input("Kui vana sa oled?"))
-except:
-    print("!!!!!!")
-if vanus==18:
-    luba=int(input("Kas lubate vanematele hindeid vaadata?"))
-
-elif vanus==14 or vanus==15 or vanus==16 or vanus==17: #and , or, not !=ei võrdu, <, >, >=, <=
-    print("Automaatne juurdepääs vanematele")
-else: 
-    print("Viga!")
-
-
+x=17
+y=23
+y=x+y+1
+x=y+x
+print("x")
 
 
 
 
 try:
-     päev=int(input("Mis päev ja mitu tundi täna on ?"))
+    päev=int(input("Mis päev ja mitu tundi täna on ?"))
+    if  päev==1:
+        n="Esmaspäev"
+        n="6 tundi"
+    elif päev==2:
+        n="Teisipäev"
+        n="8 tundi"
+    elif päev==3:
+        n="Kolmapäev"
+        n="6 tundi"
+    elif päev==4:
+        n="Neljapäev"
+        n="5 tundi"
+    elif päev==5:
+        n="Reede"
+        n="7 tundi"
+    elif päev==6:
+        n="Laupäev"
+        n="0 tundi"
+    elif päev==7:
+        n="Pühapäev"
+        n="0 tundi"
+    else: 
+        n="vale number"
+    print(n)
 except:
-     print("!!!!!!!")
-if   päev==1:
-    n="Esmaspäev"
-    n="6 tundi"
-elif päev==2:
-    n="Teisipäev"
-    n="8 tundi"
-elif päev==3:
-    n="Kolmapäev"
-    n="6 tundi"
-elif päev==4:
-    n="Neljapäev"
-    n="5 tundi"
-elif päev==5:
-    n="Reede"
-    n="7 tundi"
-elif päev==6:
-    n="Laupäev"
-    n="0 tundi"
-elif päev==7:
-    n="Pühapäev"
-    n="0 tundi"
-else: 
-    n="vale number"
-print(n)
+    print("!!!!!!!")
+
+
+
+#Tahvel 
+print("Sisselogimine tahvel")
+try:
+    vanus=int(input("kui vana sa oled ?"))
+    if vanus>=18:
+        print("Kas sa annad vanematele loa oma Tahvelit vaadata ?")
+    o=(input("Jah või ei"))
+    if o.lower()=="jah": 
+        print({o})
+        print("See on ligipääs teie vanematele")
+        print("tahvel on linni")
+    elif o.upper()=="ei":
+         print("Sissepääs pudub")
+         print("Tahvel on kinni")
+    if vanus<18:
+        print("Juurepääs vanematele on automaatselt antud")
+except:
+    print("Tahvel on kinni")
+
+
+
+
+
 
 
 
