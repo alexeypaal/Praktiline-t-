@@ -1,12 +1,5 @@
 from math import *
 from random import *
-x=17
-y=23
-y=x+y+1
-x=y+x
-print("x")
-
-
 
 
 try:
